@@ -1,0 +1,39 @@
+/* FAQ CSS */
+.faqDiv {
+  width: 100%;
+  margin: 5px auto;
+}
+.faqHead {
+  display: flex;
+  justify-content: space-around;
+  vertical-align: middle;
+  padding: 5px;
+  align-items: center;
+  background-color: var(--primaryGold);
+
+  border-radius: 10px;
+  z-index: 1;
+}
+.faqContent {
+  background-color: var(--primaryGoldHover);
+  padding: 20px;
+
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  z-index: 2;
+}
+.faqTitle {
+  color: #fff;
+  font-size: 1.6em;
+  font-family: "teko-regular";
+}
+.faqText {
+  color: #fff;
+  font-size: 0.9em;
+  text-align: justify;
+}
+@media only screen and (min-width: 768px) {
+  .faqDiv {
+    width: 500px;
+  }
+}

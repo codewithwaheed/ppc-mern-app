@@ -1,0 +1,30 @@
+{
+  "name": "ppc",
+  "version": "1.0.0",
+  "description": "paid coustom app",
+  "main": "app.js",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "body-parser": "^1.19.0",
+    "connect-mongo": "^3.2.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "jquery": "^3.5.1",
+    "mongoose": "^5.11.8",
+    "passport": "^0.4.1",
+    "passport-google-oauth20": "^2.0.0",
+    "validator": "^13.5.2"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "nodemon": "^2.0.6"
+  },
+  "scripts": {
+    "start": "cross-env NODE_ENV=production node app",
+    "dev": "cross-env NODE_ENV=development nodemon app"
+  },
+  "author": "waheed ahmad",
+  "license": "ISC"
+}

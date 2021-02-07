@@ -1,0 +1,100 @@
+:root {
+  --primaryGold: #eaa300;
+  --bgColor: #000;
+  --primaryGoldHover: #5a4614;
+  --errorColor: #ed4337;
+}
+
+/* REGISTER TEAM CSS */
+/* . */
+/* REGISTER FORM CSS */
+.formContainer {
+  margin: 50px auto;
+  width: 100%;
+  min-height: 400px;
+  background-color: #5a4614;
+  clip-path: polygon(0 0, 85% 0, 100% 14%, 100% 100%, 14% 100%, 0 86%);
+}
+.squadFormClipPath {
+  clip-path: polygon(0 0, 90% 0, 100% 10%, 100% 100%, 10% 100%, 0 90%);
+}
+.formLabel {
+  color: var(--primaryGold);
+  font-weight: 500;
+  margin-right: 20px;
+  font-size: 0.9em;
+}
+.formInputDiv {
+  margin: 0 auto;
+  padding-top: 20px;
+  width: fit-content;
+}
+.formInput {
+  background-color: var(--primaryGold);
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0 0 8px -3px var(--primaryGold);
+  font-size: 0.8em;
+  padding: 5px 20px;
+}
+.formInput::placeholder {
+  color: #fff;
+  font-size: 0.9em;
+}
+.formInput:focus {
+  background-color: var(--primaryGold);
+  color: #fff;
+  border: none !important;
+  border-radius: 4px;
+  box-shadow: 0 0 8px -3px var(--primaryGold);
+  font-size: 0.8em;
+  padding: 5px 20px;
+}
+.formInput:hover {
+  background-color: var(--primaryGold);
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 5 5 20px -10px #000;
+  font-size: 0.8em;
+  padding: 5px 20px;
+}
+.formInputError {
+  border: 1px solid red;
+}
+.formInputError:hover {
+  border: 1px solid red;
+}
+.formInputError:focus {
+  border: 1px solid red !important;
+}
+.errorMessage {
+  font-size: 0.7em;
+  font-weight: 500;
+  color: red;
+  padding: 2px 10px;
+  padding-left: 30px;
+  text-align: center;
+  margin-left: 70px;
+}
+.errorDiv {
+  background-color: var(--errorColor);
+  padding: 5px;
+  text-align: center;
+  margin: 0 auto;
+  color: #fff;
+  font-weight: 500;
+  font-size: 0.8em;
+  width: fit-content;
+}
+
+/* media quries */
+@media only screen and (min-width: 768px) {
+  .formContainer {
+    width: 500px;
+  }
+  .navbar-light .navbar-nav .nav-link:hover::after {
+    width: 100%;
+  }
+}

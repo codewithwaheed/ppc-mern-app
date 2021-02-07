@@ -1,0 +1,123 @@
+:root {
+  --primaryGold: #eaa300;
+  --bgColor: #000;
+  --black25p: rgba(0, 0, 0, 0.25);
+  --primaryGoldHover: #5a4614;
+}
+
+/* LANDING SLIDER CSS */
+.landingSliderBg {
+  background-image: url("../../../assets/images//landingBg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+  width: 100%;
+}
+.sliderTitle {
+  color: var(--primaryGold);
+  font-family: "teko-regular";
+  letter-spacing: 5px;
+  font-weight: 700;
+  font-size: 3em;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 40px;
+  text-shadow: 3px 3px 15px #000;
+}
+.sliderTitle2 {
+  color: var(--primaryGold);
+  font-family: "teko-regular";
+  text-shadow: 3px 3px 15px #000;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 2.5em;
+  font-weight: 500;
+  margin-top: 30px;
+}
+.sliderText {
+  color: var(--primaryGold);
+  font-family: "teko-regular";
+  text-shadow: 3px 3px 15px #000;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 2em;
+  line-height: 1;
+}
+
+/* HOW TO PALY */
+
+.titleText {
+  color: var(--primaryGold);
+  font-family: "teko-regular";
+  letter-spacing: 5px;
+  font-weight: 700;
+  font-size: 3em;
+  text-transform: uppercase;
+}
+.howToPlay .card {
+  border: var(--primaryGold) 2px solid;
+  height: 350px;
+  width: 260px;
+  margin: 20px auto;
+  text-align: center;
+  background-color: var(--primaryGold);
+  clip-path: polygon(0 0, 85% 0, 100% 14%, 100% 100%, 14% 100%, 0 86%);
+}
+.howToPlay .cardBorder {
+  height: 340px;
+  width: 250px;
+  margin: auto auto;
+  padding: 20px 20px;
+  text-align: center;
+  background-color: var(--bgColor);
+  clip-path: polygon(0 0, 85% 0, 100% 14%, 100% 100%, 14% 100%, 0 86%);
+}
+
+.howToPlay .shapeCircle {
+  height: 50px;
+  width: 50px;
+  background-color: var(--primaryGold);
+  border-radius: 25px;
+  margin: 10px auto;
+  border: #fff 2px solid;
+}
+.howToPlay .shapeText {
+  color: #fff;
+  padding: 8px;
+  font-size: 2em;
+  font-family: "teko-regular";
+}
+
+/* FEATURE CSS */
+.feature .card {
+  background-color: transparent;
+  margin: 10px auto;
+  text-align: center;
+  padding: 0px 30px;
+}
+.featureCircle {
+  height: 180px;
+  width: 180px;
+  border-radius: 90px;
+  border: var(--primaryGold) 3px solid;
+  padding: 35px;
+  margin: 10px auto;
+}
+.featureImage {
+  height: 100%;
+  width: 100%;
+}
+
+/* Media Quries CSS */
+@media only screen and (min-width: 768px) {
+  .sliderTitle {
+    font-size: 4em;
+  }
+  .sliderText {
+    font-size: 2.5em;
+  }
+  .sliderTitle2 {
+    font-size: 3em;
+  }
+}

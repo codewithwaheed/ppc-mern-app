@@ -1,0 +1,99 @@
+/* common Admin Css */
+
+.basicAdminRow {
+  padding: 1vw 5vw;
+}
+/* Admin Page css */
+.adminFlex {
+  display: flex;
+  min-height: 100vh;
+}
+.adminSidebarDiv {
+  flex: 0.15;
+  background-color: #000000;
+  border-right: 1px solid var(--primaryGoldHover);
+}
+.adminContentDiv {
+  flex: 1;
+  background-color: #000000;
+}
+.sideBar {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0;
+}
+.sideBarItem {
+  color: var(--primaryGold);
+  font-size: 1.6rem;
+  font-family: "teko-regular";
+  text-transform: uppercase;
+  width: 100%;
+  padding: 5px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sideBarItem:hover {
+  background-color: var(--primaryGoldHover);
+}
+
+.sideBarDropDown {
+  background-color: #eaa300;
+  padding: 0;
+}
+.dropDownItem {
+  font-size: 0.9rem;
+  /* font-family: "teko-regular"; */
+  color: #000;
+  font-weight: bold;
+  text-transform: capitalize;
+  padding: 8px 5px;
+  transition: ease-in 0.2s;
+}
+.dropDownItem:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+.adminSidebarButton {
+  position: fixed;
+  display: inline;
+  z-index: 500;
+  background-color: var(--primaryGold);
+  color: #000;
+}
+
+/* mobile sideBar */
+.sideBarM {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background-color: #000;
+  display: flex;
+  min-width: 320px;
+  height: auto;
+  transform: translateX(-100vw);
+  transition-delay: 0.6s;
+  -webkit-transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+  width: 100%;
+  flex-direction: column;
+  z-index: 490;
+  padding: 50px 0;
+  border-right: 1px solid var(--primaryGoldHover);
+}
+.sideBarMactive {
+  transform: translateX(0);
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .adminContentDiv {
+    flex: 0.85;
+  }
+  .adminSidebarButton {
+    display: none;
+  }
+}

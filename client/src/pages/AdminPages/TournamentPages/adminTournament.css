@@ -1,0 +1,33 @@
+.suffixDiv {
+  display: inline;
+  color: #fff;
+  font-size: 0.7em;
+  font-weight: bold;
+  margin-left: -30px;
+}
+
+/* your tournament css */
+.yourTournamentCard {
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+  margin: 10px;
+  background-color: var(--primaryGoldHover);
+  padding: 10px;
+  transition: ease-in 0.3s;
+}
+.yourTournamentActionsDiv {
+  display: none;
+  transition: ease-in 0.3s;
+}
+.yourTournamentCard:hover .yourTournamentActionsDiv {
+  display: inline;
+}
+.yourTournamentActions {
+  color: var(--primaryGold);
+  margin: 5px;
+  cursor: pointer;
+}
+.yourTournamentActions:hover {
+  color: #fff;
+}
